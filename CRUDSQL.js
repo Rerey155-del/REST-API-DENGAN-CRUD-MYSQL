@@ -7,6 +7,59 @@ const bodyParser = require("body-parser");
 // middleware
 apk.use(bodyParser.json());
 
+// ======= MEMBANGUN SEBUAH FILE =======
+// const fs = require('fs');
+// fs.copyFileSync(`teks.txt`,`tekssaya.txt`);
+// console.log("teks nya udah berjalan");
+
+// ======== MEMBACA FILE TXT SECARA ASINCRONUS ==========
+// const teks = require('fs');
+// teks.readFile('teks.txt','utf8',(err,data)=>{
+//     if(err) throw err;
+//     console.log(data);
+//     })
+
+// ======= MEMBUAT EVENT CUSTOM =============
+// const EventEmitter =  require('events');
+// const eventEmitter = new EventEmitter();
+
+// eventEmitter.on('heloo',() => {
+//     console.log('halooo dunia')
+// })
+
+// eventEmitter.emit('heloo');
+
+// ======== MEMBUAT SERVER HTTP DASAR ============
+// const http = require('http')
+
+// const server = http.createServer((req,res) => {
+
+//     res.statusCode = 200;
+//     res.end("haiii, saya Reyhan disini");
+// })
+
+// server.listen(3000,'127.3.2.1', ()=> {
+//     console.log("server aktif di http://127.3.2.1:3000");
+// });
+
+// ============= MENGGUNAKAN LODASH UNTUK MEMANIPULASI STRING ===========
+// const test = require('lodash');
+// console.log(test.capitalize('hello world'))
+
+// Membuat aplikasi web dasar dengan express
+// const express =  require('express');
+// const app = express();
+
+// app.get('/',(req, res )=> {
+//     res.send('haai duniaaa');
+// })
+
+// app.listen(3000,()=> {
+//     console.log('server aktif di http://127.0.0.1:3000')
+// })
+
+
+
 apk.get("/", (req, res) => {
   const query = "SELECT * FROM user";
 
