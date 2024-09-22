@@ -1,0 +1,21 @@
+jika ingin menambhakan data dengan methode POST di postman, masukkkan URL seperti ini : http://localhost:3000/tambah
+- Kemudian pilihlah method POST dan isi body dengan data yang ingin ditambahkan
+{
+  "nomor": 1,
+  "nama": "Reyhan Maulana",
+  "email": "reyhan@example.com"
+}
+
+jika ingin mengubah data dengan metode PUT berdasarkan nomor, maka masukkan URL ini di browser : http://localhost:3000/ubahData/<nomor>
+{
+  "nama": "Nama Baru",
+  "email": "emailbaru@example.com"
+}
+
+jika ingin mengubah hanya email dengan metode PATCH berdasarkan nomor, maka, masukkan URL ini di browser : http://localhost:3000/ubahEmail/<nomor>
+masukkan email yang ingin diubah
+{
+  "email": "emailbaru@example.com"
+}
+
+jika ingin menghapus data berdasarkan nomor dengan metode DELETE, maka masukkan petunjuk URL di browser : http://localhost:3000/hapus/<nomor> (gantilah <nomor> dengan nomor dari data user yang ingin dihapus, misalnya http://localhost:3000/hapus/1)
